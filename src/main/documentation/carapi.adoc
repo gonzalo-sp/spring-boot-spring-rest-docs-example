@@ -1,0 +1,42 @@
+= Car API
+Gonzalo Santiago
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 2
+
+[[introduction]]
+= Introduction
+
+== Welcome to the cars API
+
+Welcome to the fabulous car API.
+
+[[access-resources]]
+= Access resources
+
+[[index-links]]
+== Index
+
+=== List available resource
+
+Get all available resources within the car app.
+
+=== Response structure
+include::{snippets}/index-links/response-fields.adoc[]
+
+[[index-links-links]]
+=== Links
+include::{snippets}/index-links/links.adoc[]
+
+=== Request
+
+include::{snippets}/index-links/curl-request.adoc[]
+
+==== Response
+
+include::{snippets}/index-links/http-response.adoc[]
+
+[[cars]]
+include::cars.adoc[]

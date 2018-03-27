@@ -1,0 +1,75 @@
+== Cars
+
+[[car-list]]
+=== List cars
+
+This is how you will get a list of cars.
+
+==== Response structure
+
+include::{snippets}/car-list/response-fields.adoc[]
+
+[[cars-links]]
+==== Links
+
+include::{snippets}/car-list/links.adoc[]
+
+==== Example request
+
+include::{snippets}/car-list/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/car-list/http-response.adoc[]
+
+[[car-get]]
+=== Get a car
+
+Get the car you want.
+
+==== Response structure
+
+include::{snippets}/car-get/response-fields.adoc[]
+
+[[car-links]]
+==== Links
+
+include::{snippets}/car-get/links.adoc[]
+
+==== Example request
+
+include::{snippets}/car-get/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/car-get/http-response.adoc[]
+
+[[car-delete]]
+=== Delete car
+
+Delete a car *an old one*
+
+==== Example request
+
+include::{snippets}/car-delete/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/car-delete/http-response.adoc[]
+
+[[car-create]]
+=== Create car
+
+If you want to create a new car.
+
+==== Request fields
+
+include::{snippets}/car-create/request-fields.adoc[]
+
+==== Example request
+
+include::{snippets}/car-create/curl-request.adoc[]
+
+==== Example response
+
+include::{snippets}/car-create/http-response.adoc[]
