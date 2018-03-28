@@ -1,0 +1,23 @@
+databaseChangeLog:
+- changeSet:
+    id: 1519132933450-1
+    author: carlos-cagigao (generated)
+    changes:
+    - addColumn:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+            name: id_card
+            type: int8
+        tableName: Card
+- changeSet:
+    id: 1519132933450-2
+    author: carlos-cagigao (generated)
+    changes:
+    - addDefaultValue:
+        columnDataType: timestamp
+        columnName: created_at
+        defaultValueComputed: CURRENT_TIMESTAMP
+        tableName: Card
+

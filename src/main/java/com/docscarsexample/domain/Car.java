@@ -22,6 +22,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
+@Table(name="\"Car\"", catalog="postgres", schema="public")
 public class Car {
 	
 	@Id

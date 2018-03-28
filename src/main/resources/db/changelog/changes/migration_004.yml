@@ -1,0 +1,19 @@
+databaseChangeLog:
+- changeSet:
+    id: 1520328057480-1
+    author: carlos-cagigao (generated)
+    changes:
+    - addDefaultValue:
+        columnDataType: timestamp
+        columnName: created_at
+        defaultValueComputed: CURRENT_TIMESTAMP
+        tableName: Card
+- changeSet:
+    id: 1520328057480-2
+    author: carlos-cagigao (generated)
+    changes:
+    - dropNotNullConstraint:
+        columnDataType: boolean
+        columnName: is_default
+        tableName: Card
+

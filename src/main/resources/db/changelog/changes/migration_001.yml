@@ -1,0 +1,51 @@
+databaseChangeLog:
+- changeSet:
+    id: 1519132272158-1
+    author: carlos-cagigao (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+            name: id
+            type: BIGINT
+        - column:
+            constraints:
+              nullable: false
+            name: alias
+            type: VARCHAR(255)
+        - column:
+            constraints:
+              nullable: false
+            name: bin
+            type: VARCHAR(255)
+        - column:
+            defaultValueComputed: CURRENT_TIMESTAMP
+            name: created_at
+            type: TIMESTAMP WITHOUT TIME ZONE
+        - column:
+            constraints:
+              nullable: false
+            name: id_user
+            type: BIGINT
+        - column:
+            constraints:
+              nullable: false
+            name: is_default
+            type: BOOLEAN
+        - column:
+            constraints:
+              nullable: false
+            name: masked_pan
+            type: VARCHAR(255)
+        tableName: Card
+- changeSet:
+    id: 1519132272158-2
+    author: carlos-cagigao (generated)
+    changes:
+    - addPrimaryKey:
+        columnNames: id
+        constraintName: CardPK
+        tableName: Card
+
